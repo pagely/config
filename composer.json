@@ -1,5 +1,5 @@
 {
-    "name": "equip/config",
+    "name": "pagely/config",
     "description": "A library for configuring the Auryn dependency injector",
     "type": "library",
     "license": "MIT",
@@ -7,16 +7,20 @@
         {
             "name": "Equip Contributors",
             "homepage": "https://github.com/equip"
+        },
+        {
+            "name": "Pagely",
+            "homepage": "https://github.com/pagely"
         }
     ],
     "minimum-stability": "stable",
     "require": {
-        "php": ">=5.5",
-        "equip/structure": "^1",
+        "php": "^7.3 | ^8.0",
+        "pagely/structure": "^2",
         "rdlowrey/auryn": "^1.1"
     },
     "require-dev": {
-        "phpunit/phpunit": "^4.8|^5.0"
+        "phpunit/phpunit": "^9.0"
     },
     "autoload": {
         "psr-4": {
@@ -30,5 +34,11 @@
     },
     "scripts": {
         "test": "phpunit"
-    }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/pagely/structure.git"
+        }
+    ]
 }
